@@ -1,0 +1,16 @@
+body, html{
+    height: 100%;
+}
+body{
+    background-size: cover;
+}
+body::before{
+    background: rgba(0,0,0,0.5);
+}
+.card{
+    background-color: rgba(0,0,0,0.5) !important;
+    color: white;
+}
+.input-group-prepend span, .login_btn{
+background-color: #FFC312;
+}
