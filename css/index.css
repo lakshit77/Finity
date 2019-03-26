@@ -22,7 +22,7 @@ body{
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #404e67;
+    background: #3191b6;
     color: #fff;
     transition: all 0.3s;
     z-index: 1;
@@ -165,7 +165,7 @@ a.article:hover {
 
 /* navbar */
 .wrapper .bg-light{
-    background-color: white !important;
+    background-color: #3191b6 !important;
     width: 102% !important;
     box-shadow: 0 0 11px rgba(0,0,0,.13);
     z-index: 2  ;
@@ -177,12 +177,15 @@ a.article:hover {
 }
 .upper_Layer{
     width: 250px;
-    height:63px;
+    height:57px;
     top:0;
     left:0;
     position: fixed;
-    z-index: 3;
-    background: #404e67;
+    z-index: 100;
+    background: white;
+}
+.fullscreen_color, .name_color{
+    color: white !important;
 }
 .material-icons{
     cursor: pointer;
@@ -572,14 +575,19 @@ input::-webkit-input-placeholder {
     font-weight: bold;
 }
 .card_1{
-    background-image: linear-gradient(to right ,#fe9466, #feb697);
+    background-color: #1783cc !important;
 }
 .card_2{
-    background-image: linear-gradient(to right ,#0ac483, #0df2a2);
+    background-color: #61cd72 !important;
 }
+
 .card_3{
-    background-image: linear-gradient(to right ,#fe5e71, #fe8e9b);
+    background-color: #e74b2e !important;
 }
+
 .card_4{
-    background-image: linear-gradient(to right ,#01a9ad, #01d9dd);
+    background-color: #f8b034 !important;
+}
+.jumbo_color{
+    background-image: linear-gradient(to right, blue, black)
 }

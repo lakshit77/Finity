@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Analysed</title>
+    <title>GoKruze LeGen</title>
+    <link rel="shortcut icon" href="img/kruze.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,6 +11,7 @@
 
     <!-- Css File Link -->
     <link rel="stylesheet" href="css/index.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -33,7 +35,7 @@
                         <img src="img/kruze.png" alt="logo" class="img-fluid ml-4 mt-2">
 
                         <div class="mx-auto mt-3 d-block sidebarCollapse" onclick="myFunction();">
-                            <a class="material-icons ml-5" id="showMore" style="color:white">toggle_off</a>
+                            <a class="material-icons ml-5" id="showMore" style="color:#3191b6">toggle_off</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@
                     <div class="d-flex flex-row col-12">
                         <div class="col-md-6 d-none d-md-block">
                             <div class="d-flex flex-row justify-content-xl-start justify-content-md-center">
-                                <i class="material-icons mt-2 text-muted" id="fullScreen"
+                                <i class="material-icons mt-2 fullscreen_color" id="fullScreen"
                                     onclick="openFullscreen();">fullscreen</i>
                             </div>
                         </div>
@@ -64,7 +66,7 @@
                             class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
                             <a class=" nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <span>John Doe <i data-feather="chevron-down" class=""></i></span>
+                                <span class="name_color">John Doe <i data-feather="chevron-down" class=""></i></span>
                             </a>
                             <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user"
@@ -189,11 +191,41 @@
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+             <div id="piechart"></div>
+            </div>
         </div>
     </div>
 
 
+    <!-- Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 8],
+                ['Eat', 2],
+                ['TV', 4],
+                ['Gym', 2],
+                ['Sleep', 8]
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'My Average Day', 'width': 550, 'height': 400 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

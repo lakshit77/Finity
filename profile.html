@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Analysed</title>
+    <title>GoKruze LeGen</title>
+    <link rel="shortcut icon" href="img/kruze.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +34,7 @@
                         <img src="img/kruze.png" alt="logo" class="img-fluid ml-4 mt-2">
 
                         <div class="mx-auto mt-3 d-block sidebarCollapse" onclick="myFunction();">
-                            <a class="material-icons ml-5" id="showMore" style="color:white">toggle_off</a>
+                            <a class="material-icons ml-5" id="showMore" style="color:#3191b6">toggle_off</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
                     <div class="d-flex flex-row col-12">
                         <div class="col-md-6 d-none d-md-block">
                             <div class="d-flex flex-row justify-content-xl-start justify-content-md-center">
-                                <i class="material-icons mt-2 text-muted" id="fullScreen"
+                                <i class="material-icons mt-2 fullscreen_color" id="fullScreen"
                                     onclick="openFullscreen();">fullscreen</i>
                             </div>
                         </div>
@@ -64,7 +65,7 @@
                             class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
                             <a class=" nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <span>John Doe <i data-feather="chevron-down" class=""></i></span>
+                                <span class="name_color">John Doe <i data-feather="chevron-down" class=""></i></span>
                             </a>
                             <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user"
@@ -108,77 +109,39 @@
     <!-- Right Sidebar end -->
     <!-- Content start here -->
 <main class="container-fluid" id="content">
-    <section class="row">
-        <div class="col-12">
-            <div class="jumbotron jumbotron-fluid d-block d-lg-none">
-                <div class="text-center">
-                    <div>
-                        <img src="img/user-img.jpg" alt="" class="img-thumbnail">
-                    </div>
-                    <div>
-                        <h5 class="font-weight-normal">Josephin Villa</h5>
-                        <h6 class="font-weight-normal">Web Designer</h6>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary"><i class="material-icons"></i>Follow</button>
-                        <button type="button" class="btn btn-primary">Message</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card text-white profile_background d-none d-lg-block d-xl-block">
-                <img src="img/cover.jpg" class="card-img" alt="cover">
-                <div
-                    class="card-img-overlay mt-5 d-flex flex-md-row flex-sm-column justify-content-md-between justify-content-sm-center">
-                    <div class="d-flex flex-rows align-self-start">
-                        <img src="img/user-img.jpg" alt="" class="mt-xl-4 mt-lg-0 mb-lg-5 ml-3 img-thumbnail">
-                        <div>
-                            <h5 class="mt-xl-4 mt-lg-0 ml-4 font-weight-normal">Josephin Villa</h5>
-                            <h6 class="font-weight-normal ml-4 mb-lg-5">Web Designer</h6>
-                        </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn mt-xl-4 mt-lg-0 mb-lg-5 dropdown-color">Follow</button>
-                        <button type="button" class="btn mt-xl-4 mt-lg-0 mb-lg-5 dropdown-color">Message</button>
-                    </div>
-                </div>
+<div class="row mt-5 justify-content-center">
+    <div class="col-md-6">
+        <div class="d-flex flex-row justify-content-between">
+            <h3 class="">About Me</h3>
+            <i class="material-icons" id="button_form">edit </i>
+        </div>
+        <div class="form-group row ">
+            <label for="edit_form" class="col-sm-4 col-form-label">Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="edit_form1" readonly="readonly" value="Laksh Ukani">
             </div>
         </div>
-
-            <!-- tab end -->
-            <!-- Tab 1 Personal Info -->
-           <div class="row mt-5 col-12">
-               <div class="col-12 ">
-                    <h5 class="text-center">About Me</h5>
-                    <div class="d-flex justify-content-center">
-                        <table class="table col-6">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Full Name</th>
-                                    <td>Josephine Villa</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Password</th>
-                                    <td>123456</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Email</th>
-                                    <td>xyz@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Mobile Number</th>
-                                    <td>8974563214</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-           </div>
-            <!-- Tab 1 end personal info -->
-
+        <div class="form-group row ">
+            <label for="edit_form" class="col-sm-4 col-form-label">Password</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="edit_form2" readonly="readonly" value="123456789">
+            </div>
         </div>
-    </section>
+        <div class="form-group row ">
+            <label for="edit_form" class="col-sm-4 col-form-label">Email Id</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" id="edit_form3" readonly="readonly" value="xyz@gmail.com">
+            </div>
+        </div>
+        <div class="form-group row ">
+            <label for="edit_form" class="col-sm-4 col-form-label">Mobile Number</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="edit_form4" readonly="readonly" value="6857489654">
+            </div>
+        </div>
+    </div>
+</div>
 </main>
-
 
 
 
