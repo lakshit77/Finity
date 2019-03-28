@@ -43,14 +43,14 @@
                 <div class="d-flex d-row justify-content-between">
                     <div onclick="myFunctions();"
                         class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2">
-                        <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
+                        <i class="material-icons" style="color:#3191b6;" id="showmore">toggle_off</i>
                     </div>
                     <img src="img/kruze.png" alt="logo" class="img-fluid text-center navbar-toggler"
                         style="height: 50px; width: 100px">
                     <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <i class="material-icons mt-2" style="color:white">more_horiz</i>
+                        <i class="material-icons mt-2" style="color:#3191b6">more_horiz</i>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -61,17 +61,19 @@
                                     onclick="openFullscreen();">fullscreen</i>
                             </div>
                         </div>
-                        <div
-                            class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
+                        <div class="dropdown col-md-6 col-sm-12 d-flex flex-row justify-content-end ">
                             <a class=" nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                <span class="name_color">John Doe <i data-feather="chevron-down" class=""></i></span>
+                                <span class="d-md-none d-lg-none d-xl-none" style="color: #3191b6;">John Doe <i
+                                        data-feather="chevron-down" class=""></i></span>
+                                <span class="name_color d-none d-md-block">John Doe <i data-feather="chevron-down"
+                                        class=""></i></span>
                             </a>
                             <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user"
-                                        class="mr-2"></i> Profile</a>
-                                <a class="dropdown-item mt-3" href="#"><i data-feather="log-out" class="mr-2"></i>
-                                    Logout</a>
+                                <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user" class="mr-2"></i>
+                                    Profile</a>
+                                <a class="dropdown-item mt-3" href="sign_in.html"><i data-feather="log-out"
+                                        class="mr-2"></i> Logout</a>
                             </div>
                         </div>
                     </div>
