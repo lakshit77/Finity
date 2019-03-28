@@ -3,17 +3,344 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <!-- DataTable Cdn -->
+      <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.18/af-2.3.2/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.css" />
+      <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4-4.1.1/dt-1.10.18/af-2.3.2/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+<!--         <link rel="stylesheet" href="css/index.css">
+ -->        <style>
+          div.dataTables_wrapper {
+        width: 800px;
+        margin: 0 auto;
+    }
+        </style>
+      <!-- Datatable end -->
 </head>
 <body>
 
-<input id="myInput" type="text" class="form-control" readonly="readonly" value=" laksh ukani"/><br />
-<input id="myButton" type="submit" value="update" />
+<table id="myTable" class="display col-12 nowrap" style="width:100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company Name</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Flexible Time</th>
+      <th>Pickup Location</th>
+      <th>Pickup Landmark</th>
+      <th>Drop Location</th>
+      <th>Drop Stop</th>
+      <th>Note</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>Kruze</td>
+      <td>xyz@gmail.com</td>
+      <td>8754856987</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>Borivali</td>
+      <td>Link Road</td>
+      <td>Powai</td>
+      <td>Nana Nani Park</td>
+      <td>weekly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Jose Dexson</td>
+      <td>google</td>
+      <td>yxe@gmail.com</td>
+      <td>54795655978</td>
+      <td>9:00am</td>
+      <td>6:00pm</td>
+      <td>7:30pm</td>
+      <td>malad</td>
+      <td>powai Road</td>
+      <td>churniRoad</td>
+      <td>vardhaman Park</td>
+      <td>monthly pass</td>
+      <td class="dropdown">
+        <button type="button" class="btn dropdown-color" data-toggle="modal" data-target="#leadModal"><i
+            class="fa fa-cog mr-2" aria-hidden="true"></i><i data-feather="chevron-down"></i>
+        </button>
+      </td>
+    </tr>
 
+
+
+
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Name</th>
+      <th>Company Name</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Flexible Time</th>
+      <th>Pickup Location</th>
+      <th>Pickup Landmark</th>
+      <th>Drop Location</th>
+      <th>Drop Stop</th>
+      <th>Note</th>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- Datatable -->
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="js/script.js"></script>
 <script>
-  document.getElementById('myButton').onclick = function () {
-    document.getElementById('myInput').removeAttribute('readonly');
-  };
+  $(document).ready(function () {
+    $('#myTable').DataTable({
+      "scrollX": true
+    });
+  });
 </script>
+
 </body>
 
 </html>

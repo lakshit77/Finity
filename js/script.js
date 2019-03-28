@@ -105,9 +105,6 @@ function CopyText() {
     copyText.select();
     document.execCommand("copy");
 }
-$(document).ready(function () {
-    $('#example').DataTable();
-});
 
 /*End of copy text*/
 
