@@ -1,11 +1,4 @@
-/* Edit form */
-document.getElementById('button_form').onclick = function () {
-    document.getElementById('edit_form1').removeAttribute('readonly');
-    document.getElementById('edit_form2').removeAttribute('readonly');
-    document.getElementById('edit_form3').removeAttribute('readonly');
-    document.getElementById('edit_form4').removeAttribute('readonly');
-};
-/* Edit form end */
+
 /* Sidebar Toggle */
 $(document).ready(function () {
     $('.sidebarCollapse').on('click', function () {
