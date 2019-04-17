@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
+    <style>
+        .btn-light{
+            background-color: #ffffff !important ;
+            border-color: #ced4da  !important;
+        }
+    </style>
     <title>GoKruze LeGen</title>
     <link rel="shortcut icon" href="img/kruze.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Search in form -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
 
     <!-- Css File Link -->
@@ -87,11 +95,128 @@
                     <div class="form-group row">
                         <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">PickUp Location</label>
                         <div class="col-sm-10">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Borivali</option>
-                                <option>Andheri</option>
-                                <option>Kandivali</option>
-                                <option>Malad</option>
+                            <select class="form-control selectpicker" data-live-search="true" data-size="10x" title="Choose pickup Location">
+                                <optgroup label="Western Line">
+                                    <option>Churchgate</option>
+                                    <option>Marine Lines</option>
+                                    <option>Charni Road</option>
+                                    <option>Grant Road</option>
+                                    <option>Mumbai central</option>
+                                    <option>Mahalaksmi</option>
+                                    <option>Lower Parel</option>
+                                    <option>Prabhadevi</option>
+                                    <option>Dadar</option>
+                                    <option>Matunga Road</option>
+                                    <option>Mahim Jn</option>
+                                    <option>Bandra</option>
+                                    <option>Khar Road</option>
+                                    <option>Santa Cruz</option>
+                                    <option>Ville Parle</option>
+                                    <option>Andheri</option>
+                                    <option>Jogeshwari</option>
+                                    <option>Ram Mandir</option>
+                                    <option>Goregaon</option>
+                                    <option>Malad</option>
+                                    <option>Kandivali</option>
+                                    <option>Borivali</option>
+                                    <option>Dahisar</option>
+                                    <option>Mira road</option>
+                                    <option>Bhayander</option>
+                                    <option>Naigaon</option>
+                                    <option>Vasai Road</option>
+                                    <option>Nalla Sopara</option>
+                                    <option>Virar</option>
+                                </optgroup>
+                                <optgroup label="Central Line">
+                                    <option>CSMT</option>
+                                    <option>Masjid</option>
+                                    <option>Sandhurst Road</option>
+                                    <option>Byculla</option>
+                                    <option>Chinchpokli</option>
+                                    <option>Currey Road</option>
+                                    <option>Parel</option>
+                                    <option>Dadar</option>
+                                    <option>Matunga</option>
+                                    <option>Sion</option>
+                                    <option>Kurla</option>
+                                    <option>Vidyavihar</option>
+                                    <option>Ghatkopar</option>
+                                    <option>Vikhroli</option>
+                                    <option>Kanjur Marg</option>
+                                    <option>Bhandup</option>
+                                    <option>Nahur</option>
+                                    <option>Mulund</option>
+                                    <option>Thane</option>
+                                    <option>Kalva</option>
+                                    <option>Mumbra</option>
+                                    <option>Diva Jn</option>
+                                    <option>Kopar</option>
+                                    <option>Dombivali</option>
+                                    <option>Thakurli</option>
+                                    <option>Kalyan</option>
+                                    <option>Vithalwadi</option>
+                                    <option>Ulhas Nagar</option>
+                                    <option>Ambernath</option>
+                                    <option>Badlapur</option>
+                                    <option>Vangani</option>
+                                    <option>Shelu</option>
+                                    <option>Neral</option>
+                                    <option>Bhivpuri Road</option>
+                                    <option>Karjat</option>
+                                    <option>Palasdhari</option>
+                                    <option>Kelvani</option>
+                                    <option>Dolavli</option>
+                                    <option>Lowjee</option>
+                                    <option>Khopoli</option>
+                                    <option>Shahad</option>
+                                    <option>AMbivli</option>
+                                    <option>Titwala</option>
+                                    <option>Khadavli</option>
+                                    <option>Vasind</option>
+                                    <option>Asangaon</option>
+                                    <option>Atgaon</option>
+                                    <option>Khardi</option>
+                                    <option>Kasara</option>
+                                </optgroup>
+                                <optgroup label="Harbour Line">
+                                    <option>CSMT</option>
+                                    <option>Masjid</option>
+                                    <option>Sandhurst Road</option>
+                                    <option>Dockyard ROad</option>
+                                    <option>Reay Road</option>
+                                    <option>Cotton Green</option>
+                                    <option>Sewri</option>
+                                    <option>Vadala ROad</option>
+                                    <option>KIng Circle</option>
+                                    <option>Mahim Jn</option>
+                                    <option>Bandra</option>
+                                    <option>Khar ROad</option>
+                                    <option>Santa Cruz</option>
+                                    <option>Ville Parle</option>
+                                    <option>Andheri</option>
+                                    <option>Jogeshwari</option>
+                                    <option>Ram Mandir</option>
+                                    <option>GOregaon</option>
+                                    <option>Malad</option>
+                                    <option>Goregaon</option>
+                                    <option>GTB Nagar</option>
+                                    <option>Chunabhatti</option>
+                                    <option>Kurla</option>
+                                    <option>Tilaknagar</option>
+                                    <option>Chembur</option>
+                                    <option>Govandi</option>
+                                    <option>Mankhurd</option>
+                                    <option>Vashi</option>
+                                    <option>Sanpada</option>
+                                    <option>Juinagar</option>
+                                    <option>Nerul</option>
+                                    <option>Seawood Darave</option>
+                                    <option>Belapur CBD</option>
+                                    <option>Kharghar</option>
+                                    <option>Manasarovar</option>
+                                    <option>Khandeshwar</option>
+                                    <option>Panvel</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -104,23 +229,142 @@
                     <div class="form-group row">
                         <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Drop Location</label>
                         <div class="col-sm-10">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Powai</option>
-                                <option>Churchgate</option>
-                                <option>Ville Parle</option>
-                                <option>Santacruz</option>
+                            <select class="form-control selectpicker" data-live-search="true" data-size="10x" title="Choose drop Location">
+                                <optgroup label="Western Line">
+                                    <option>Churchgate</option>
+                                    <option>Marine Lines</option>
+                                    <option>Charni Road</option>
+                                    <option>Grant Road</option>
+                                    <option>Mumbai central</option>
+                                    <option>Mahalaksmi</option>
+                                    <option>Lower Parel</option>
+                                    <option>Prabhadevi</option>
+                                    <option>Dadar</option>
+                                    <option>Matunga Road</option>
+                                    <option>Mahim Jn</option>
+                                    <option>Bandra</option>
+                                    <option>Khar Road</option>
+                                    <option>Santa Cruz</option>
+                                    <option>Ville Parle</option>
+                                    <option>Andheri</option>
+                                    <option>Jogeshwari</option>
+                                    <option>Ram Mandir</option>
+                                    <option>Goregaon</option>
+                                    <option>Malad</option>
+                                    <option>Kandivali</option>
+                                    <option>Borivali</option>
+                                    <option>Dahisar</option>
+                                    <option>Mira road</option>
+                                    <option>Bhayander</option>
+                                    <option>Naigaon</option>
+                                    <option>Vasai Road</option>
+                                    <option>Nalla Sopara</option>
+                                    <option>Virar</option>
+                                </optgroup>
+                                <optgroup label="Central Line">
+                                    <option>CSMT</option>
+                                    <option>Masjid</option>
+                                    <option>Sandhurst Road</option>
+                                    <option>Byculla</option>
+                                    <option>Chinchpokli</option>
+                                    <option>Currey Road</option>
+                                    <option>Parel</option>
+                                    <option>Dadar</option>
+                                    <option>Matunga</option>
+                                    <option>Sion</option>
+                                    <option>Kurla</option>
+                                    <option>Vidyavihar</option>
+                                    <option>Ghatkopar</option>
+                                    <option>Vikhroli</option>
+                                    <option>Kanjur Marg</option>
+                                    <option>Bhandup</option>
+                                    <option>Nahur</option>
+                                    <option>Mulund</option>
+                                    <option>Thane</option>
+                                    <option>Kalva</option>
+                                    <option>Mumbra</option>
+                                    <option>Diva Jn</option>
+                                    <option>Kopar</option>
+                                    <option>Dombivali</option>
+                                    <option>Thakurli</option>
+                                    <option>Kalyan</option>
+                                    <option>Vithalwadi</option>
+                                    <option>Ulhas Nagar</option>
+                                    <option>Ambernath</option>
+                                    <option>Badlapur</option>
+                                    <option>Vangani</option>
+                                    <option>Shelu</option>
+                                    <option>Neral</option>
+                                    <option>Bhivpuri Road</option>
+                                    <option>Karjat</option>
+                                    <option>Palasdhari</option>
+                                    <option>Kelvani</option>
+                                    <option>Dolavli</option>
+                                    <option>Lowjee</option>
+                                    <option>Khopoli</option>
+                                    <option>Shahad</option>
+                                    <option>AMbivli</option>
+                                    <option>Titwala</option>
+                                    <option>Khadavli</option>
+                                    <option>Vasind</option>
+                                    <option>Asangaon</option>
+                                    <option>Atgaon</option>
+                                    <option>Khardi</option>
+                                    <option>Kasara</option>
+                                </optgroup>
+                                <optgroup label="Harbour Line">
+                                    <option>CSMT</option>
+                                    <option>Masjid</option>
+                                    <option>Sandhurst Road</option>
+                                    <option>Dockyard ROad</option>
+                                    <option>Reay Road</option>
+                                    <option>Cotton Green</option>
+                                    <option>Sewri</option>
+                                    <option>Vadala ROad</option>
+                                    <option>KIng Circle</option>
+                                    <option>Mahim Jn</option>
+                                    <option>Bandra</option>
+                                    <option>Khar ROad</option>
+                                    <option>Santa Cruz</option>
+                                    <option>Ville Parle</option>
+                                    <option>Andheri</option>
+                                    <option>Jogeshwari</option>
+                                    <option>Ram Mandir</option>
+                                    <option>GOregaon</option>
+                                    <option>Malad</option>
+                                    <option>Goregaon</option>
+                                    <option>GTB Nagar</option>
+                                    <option>Chunabhatti</option>
+                                    <option>Kurla</option>
+                                    <option>Tilaknagar</option>
+                                    <option>Chembur</option>
+                                    <option>Govandi</option>
+                                    <option>Mankhurd</option>
+                                    <option>Vashi</option>
+                                    <option>Sanpada</option>
+                                    <option>Juinagar</option>
+                                    <option>Nerul</option>
+                                    <option>Seawood Darave</option>
+                                    <option>Belapur CBD</option>
+                                    <option>Kharghar</option>
+                                    <option>Manasarovar</option>
+                                    <option>Khandeshwar</option>
+                                    <option>Panvel</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Drop Stop</label>
                         <div class="col-sm-10">
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control">
                                 <option>Business Park</option>
                                 <option>Nana Nani park</option>
                                 <option>Powai Lake</option>
                                 <option>Jagruti Nagar</option>
                             </select>
+
+
                         </div>
                     </div>
                     <div class="form-group row">
@@ -154,7 +398,14 @@
     <!-- /* jQuery Custom Scroller CDN */ -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+    <script src="js/script.js">
+    $('.selectpicker').addClass('d-none').selectpicker('setStyle');
+</script>
 
 </body>
 

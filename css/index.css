@@ -86,9 +86,8 @@ body{
 .dropdown-menu{
     box-shadow: 0 0 11px rgba(0,0,0,.13);
     border: none !important;
-    position: relative;
-    top: 100% !important;
-    left: 65% !important;
+
+
 }
 
 
@@ -418,7 +417,6 @@ input::-webkit-input-placeholder {
 .jumbo_color{
     background-image: linear-gradient(to right, blue, black)
 }
- div.dataTables_wrapper {
-        width: 800px;
-        margin: 0 auto;
+.dt-buttons{
+      display: inline-block;
     }
